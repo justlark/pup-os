@@ -1,4 +1,4 @@
-# PupOS
+# PupOS 🐶
 
 PupOS is a furry Linux distro!
 
