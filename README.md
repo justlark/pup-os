@@ -2,6 +2,8 @@
 
 PupOS is a furry Linux distro!
 
+🚧 This repo is under construction 🚧
+
 ## Copyright
 
 Copyright © 2025 Lark Aster
