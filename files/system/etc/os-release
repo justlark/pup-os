@@ -1,0 +1,6 @@
+NAME="PupOS"
+PRETTY_NAME="PupOS"
+ID="pup-os"
+ID_LIKE="fedora"
+HOME_URL="https://github.com/justlark/pup-os"
+LOGO="fedora-logo-icon"
