@@ -5,7 +5,7 @@ name: pup-os
 description: A furry Linux distro!
 
 base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 41
+image-version: latest
 
 modules:
   - type: files
