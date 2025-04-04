@@ -8,3 +8,6 @@ logo-file-dark='/usr/share/backgrounds/pup-os/logo.svg'
 logo-size=9.0
 logo-opacity=uint32 180
 logo-always-visible=true
+
+[org.gnome.desktop.interface]
+cursor-theme='Bibata-Modern-Ice'
