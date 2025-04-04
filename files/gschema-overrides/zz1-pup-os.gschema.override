@@ -4,3 +4,4 @@ picture-uri-dark='file:///usr/share/backgrounds/pup-os/eepy-fox.jpg'
 
 [org.fedorahosted.background-logo-extension]
 logo-file='/usr/share/backgrounds/pup-os/logo.svg'
+logo-file-dark='/usr/share/backgrounds/pup-os/logo.svg'
