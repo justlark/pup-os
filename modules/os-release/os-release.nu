@@ -23,5 +23,7 @@ def main [json: string] {
 
   let os_release = $lines | transpose key value | each { |kv| $'($kv.key)="($kv.value)"' } | str join "\n"
 
-  print $os_release out> /etc/os-release
+  print $os_release
+
+  $os_release out> /etc/os-release
 }
