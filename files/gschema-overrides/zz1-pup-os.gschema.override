@@ -1,7 +1,9 @@
 [org.gnome.desktop.background]
-picture-uri='file:///usr/share/backgrounds/pup-os/eepy-fox.jpg'
-picture-uri-dark='file:///usr/share/backgrounds/pup-os/eepy-fox.jpg'
+picture-uri='file:///usr/share/backgrounds/pup-os/ocean-husky.jpg'
+picture-uri-dark='file:///usr/share/backgrounds/pup-os/ocean-husky.jpg'
 
 [org.fedorahosted.background-logo-extension]
 logo-file='/usr/share/backgrounds/pup-os/logo.svg'
 logo-file-dark='/usr/share/backgrounds/pup-os/logo.svg'
+logo-size=9
+logo-always-visible=true
