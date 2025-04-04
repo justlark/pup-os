@@ -36,6 +36,16 @@ modules:
         - org.mozilla.firefox
     user: {}
 
+  - type: gnome-backgrounds
+    source: local
+    backgrounds:
+      - name: "Eepy Fox"
+        path: "/usr/share/backgrounds/pup-os/eepy-fox.jpg"
+      - name: "Ocean Husky"
+        path: "/usr/share/backgrounds/pup-os/ocean-husky.jpg"
+      - name: "Smiling Husky"
+        path: "/usr/share/backgrounds/pup-os/smiling-husky.jpg"
+
   - type: gschema-overrides
     include:
       - zz1-pup-os.gschema.override
