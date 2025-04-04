@@ -7,11 +7,28 @@ description: A furry Linux distro!
 base-image: ghcr.io/ublue-os/silverblue-main
 image-version: latest
 
+stages:
+  - name: cursor-theme
+    from: docker.io/library/alpine:latest
+    modules:
+      - type: files
+        files:
+          - source: ./assets/Bibata-Modern-Ice.tar.xz
+            destination: /build/Bibata-Modern-Ice.tar.xz
+      - type: script
+        snippets:
+          - "tar -xJvf /build/Bibata-Modern-Ice.tar.xz"
+
 modules:
   - type: files
     files:
       - source: system
         destination: /
+
+  - type: copy
+    from: cursor-theme
+    src: ./Bibata-Modern-Ice
+    dest: /usr/share/icons/
 
   - type: os-release
     source: local
