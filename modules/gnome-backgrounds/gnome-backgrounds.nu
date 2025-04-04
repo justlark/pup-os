@@ -7,8 +7,8 @@ def main [json: string] {
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
     <wallpapers>
-      ($backgrounds | each { |background| $'
-          <wallpaper deleted="false">
+      ($backgrounds | each { |background| $"
+          <wallpaper deleted=\"false\">
             <name>($background.name)</name>
             <filename>($background.path)</filename>
             <options>zoom</options>
@@ -16,7 +16,7 @@ def main [json: string] {
             <pcolor>#ffffff</pcolor>
             <scolor>#000000</scolor>
           </wallpaper>
-        ' } | str join)
+        " } | str join)
     </wallpapers>
   '
 
