@@ -26,4 +26,8 @@ modules:
         - org.mozilla.firefox
     user: {}
 
+  - type: gschema-overrides
+    include:
+      - zz1-pup-os.gschema.override
+
   - type: signing
