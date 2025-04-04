@@ -18,7 +18,7 @@ cargo install --locked blue-build
 Then you can run this command to build the ISO:
 
 ```bash
-sudo bluebuild generate-iso --iso-name pup-os.iso image ghcr.io/justlark/pup-os
+bluebuild generate-iso --iso-name pup-os.iso image ghcr.io/justlark/pup-os
 ```
 
 ## Installation
