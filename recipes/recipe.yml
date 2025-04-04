@@ -13,6 +13,15 @@ modules:
       - source: system
         destination: /
 
+  - type: os-release
+    name: "PupOS"
+    id: "pup-os"
+    id_like:
+      - "fedora"
+    extra:
+      LOGO: "fedora-logo-icon"
+      HOME_URL: "https://github.com/justlark/pup-os"
+
   - type: rpm-ostree
     remove:
       # Remove Firefox in favor of the flatpak.
