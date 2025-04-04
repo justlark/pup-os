@@ -1,8 +1,0 @@
-NAME="PupOS"
-PRETTY_NAME="PupOS 41"
-ID="pup-os"
-ID_LIKE="fedora"
-VERSION="41"
-VERSION_ID="41"
-HOME_URL="https://github.com/justlark/pup-os"
-LOGO="fedora-logo-icon"
