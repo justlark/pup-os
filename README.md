@@ -5,6 +5,9 @@
 PupOS is a furry Linux distro built on [Fedora
 Atomic](https://fedoraproject.org/atomic-desktops/).
 
+This repo is currently mostly a playground for exploring distro customization. I
+expect most changes from the base image to be fairly superficial/cosmetic.
+
 ## ISO
 
 To build a PupOS ISO, you'll need to [install
