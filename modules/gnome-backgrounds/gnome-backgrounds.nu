@@ -8,6 +8,9 @@ def main [json: string] {
   # use `from xml | to xml` to pretty-print it, except nushell does not permit
   # parsing XML documents with DTDs, and the version of nushell that currently
   # ships with BlueBuild does not support `--allow-dtd`.
+  #
+  # Pretty-printing this isn't strictly necessary, except that the <?xml?>
+  # declaration MUST be at the start of the document for it to parse.
   let xml = $'<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>($backgrounds | each { |background| $"
@@ -20,10 +23,6 @@ def main [json: string] {
     <scolor>#000000</scolor>
   </wallpaper>" } | str join)
 </wallpapers>'
-
-  # The <?xml?> declaration MUST be at the start of the document for this to
-  # parse.
-  let xml = $xml | str trim
 
   print $xml
 
