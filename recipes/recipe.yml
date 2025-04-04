@@ -41,6 +41,8 @@ modules:
       HOME_URL: "https://github.com/justlark/pup-os"
 
   - type: rpm-ostree
+    install:
+      - distrobox
     remove:
       # Remove Firefox in favor of the flatpak.
       - firefox
