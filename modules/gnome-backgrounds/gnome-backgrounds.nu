@@ -20,6 +20,10 @@ def main [json: string] {
     </wallpapers>
   '
 
+  # Pretty-print the XML document. The <?xml?> declaration MUST be at the start
+  # of the document for this to parse.
+  let xml = $xml | str trim | from xml --allow-dtd | to xml --indent 2
+
   print $xml
 
   $xml out> /usr/share/gnome-background-properties/pup-os.xml
