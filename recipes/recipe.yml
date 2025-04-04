@@ -43,6 +43,7 @@ modules:
   - type: rpm-ostree
     install:
       - distrobox
+      - papirus-icon-theme
     remove:
       # Remove Firefox in favor of the flatpak.
       - firefox

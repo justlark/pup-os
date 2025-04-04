@@ -12,3 +12,4 @@ logo-always-visible=true
 [org.gnome.desktop.interface]
 cursor-theme='Bibata-Modern-Ice'
 accent-color='purple'
+icon-theme='Paprius'
