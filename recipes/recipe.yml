@@ -60,7 +60,7 @@ modules:
         - org.gnome.Loupe
         - org.gnome.Evince
         - org.gnome.clocks
-        - org.gnome.Extensions
+        - com.mattjakeman.ExtensionManager
         - org.gnome.TextEditor
         - net.nokyan.Resources
         - org.gnome.Calculator
