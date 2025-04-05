@@ -13,3 +13,6 @@ logo-always-visible=true
 cursor-theme='Bibata-Modern-Ice'
 accent-color='purple'
 icon-theme='Papirus'
+
+[org.gnome.login-screen]
+logo='/usr/share/pixmaps/pup-os-gdm-logo.png'
