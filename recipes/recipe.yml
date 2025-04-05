@@ -54,6 +54,7 @@ modules:
     system:
       install:
         - org.mozilla.firefox
+        - org.gnome.Loupe
     user: {}
 
   - type: gnome-backgrounds
