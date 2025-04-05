@@ -31,7 +31,7 @@ Here are the changes this distro makes from the base Fedora Silverblue image:
 - Include [udev rules for
   Steam](https://github.com/ValveSoftware/steam-devices).
 
-## ISO
+## Install
 
 To build a PupOS ISO, you'll need to [install
 Rust](https://www.rust-lang.org/tools/install) and run this command to install
@@ -47,7 +47,7 @@ Then you can run this command to build the ISO:
 bluebuild generate-iso --iso-name pup-os.iso image ghcr.io/justlark/pup-os
 ```
 
-## Installation
+## Rebase
 
 To rebase an existing Fedora Atomic installation to the latest build:
 
