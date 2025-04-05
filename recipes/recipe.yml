@@ -51,9 +51,10 @@ modules:
       - firefox-langpacks
       # Remove in favor of net.nokyan.Resources (Flatpak)
       - gnome-system-monitor
-      # This shows in the Gnome apps menu, which is less than ideal since it's
-      # a TUI app.
+      # These show in the Gnome apps menu, which is not ideal since they're TUI
+      # apps. Users can install these in a distrobox if they need them.
       - htop
+      - nvtop
 
   - type: default-flatpaks
     notify: true
