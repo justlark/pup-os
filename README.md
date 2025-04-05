@@ -6,7 +6,30 @@ PupOS is a furry Linux distro built on [Fedora
 Atomic](https://fedoraproject.org/atomic-desktops/).
 
 This repo is currently mostly a playground for exploring distro customization. I
-expect most changes from the base image to be fairly superficial/cosmetic.
+anticipate most changes from the base image will be fairly superficial/cosmetic.
+
+## Changes
+
+Here are the changes this distro makes from the base Fedora Silverblue image:
+
+- Make the OS name appear as "PupOS" everywhere.
+- Include several default flatpak apps.
+- Replace the Firefox RPM package with the flatpak.
+- Replace [Gnome System Monitor](https://apps.gnome.org/SystemMonitor/) with
+  [Resources](https://flathub.org/apps/net.nokyan.Resources).
+- Swap out the default cursor theme for [Bibata Modern
+  Ice](https://github.com/ful1e5/Bibata_Cursor).
+- Swap out the default icon theme for
+  [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme).
+- Include several default floofy desktop backgrounds.
+- Use the PupOS logo on the login page.
+- Use the PupOS logo on the boot splash screen.
+- Use the PupOS logo on the watermark that appears over the desktop background
+  (this can be disabled).
+- Set the default Gnome accent color to purple.
+- Include [distrobox](https://distrobox.it/).
+- Include [udev rules for
+  Steam](https://github.com/ValveSoftware/steam-devices).
 
 ## ISO
 
