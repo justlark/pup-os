@@ -87,6 +87,11 @@ following command:
 cosign verify --key cosign.pub ghcr.io/justlark/pup-os
 ```
 
+## Credits
+
+See the [Credits](./docs/credits.md) page for attributions and sources for
+resources checked into this repo.
+
 ## Copyright
 
 Copyright © 2025 Lark Aster
