@@ -44,6 +44,8 @@ modules:
     install:
       - distrobox
       - papirus-icon-theme
+      # We include this in case the user wants to install Steam, even though we
+      # don't bundle it by default.
       - steam-devices
     remove:
       # Remove Firefox in favor of the flatpak.
@@ -70,9 +72,14 @@ modules:
         - org.gnome.Calculator
         - it.mijorus.smile
         - org.libreoffice.LibreOffice
-        - com.valvesoftware.Steam
         - org.gnome.Snapshot
         - org.gnome.Weather
+        - org.gnome.DejaDup
+        - de.haeckerfelix.Fragments
+        - org.gnome.Decibels
+        - org.gnome.Totem
+        - org.gnome.Boxes
+        - com.usebottles.bottles
     user: {}
 
   - type: gnome-backgrounds
