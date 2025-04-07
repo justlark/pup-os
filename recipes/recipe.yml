@@ -82,6 +82,11 @@ modules:
         - com.usebottles.bottles
     user: {}
 
+  - type: gnome-extensions
+    install:
+      # Status Icons - https://extensions.gnome.org/extension/7332/status-icons/
+      - 7332
+
   - type: gnome-backgrounds
     source: local
     backgrounds:
