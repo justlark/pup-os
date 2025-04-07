@@ -18,8 +18,25 @@ screens:
         user: false
         system: true
       groups:
+        Core:
+          description: "Core apps"
+          default: true
+          packages:
+            - Firefox: org.mozilla.firefox
+            - Image Viewer: org.gnome.Loupe
+            - Document Viewer: org.gnome.Evince
+            - Audio Player: org.gnome.Decibels
+            - Videos (Video Player): org.gnome.Totem
+            - Clocks: org.gnome.clocks
+            - Text Editor: org.gnome.TextEditor
+            - Resources (Task Manager): net.nokyan.Resources
+            - Calculator: org.gnome.Calculator
+            - Smile (Emoji Picker): it.mijorus.smile
+            - Camera: org.gnome.Snapshot
+            - Fragments (BitTorrent Client): de.haeckerfelix.Fragments
+            - Extension Manager: com.mattjakeman.ExtensionManager
         Web Browsers:
-          description: "Additional web browsers beyond Firefox"
+          description: "Additional web browsers"
           default: false
           packages:
             - Google Chrome: com.google.Chrome
@@ -40,7 +57,7 @@ screens:
           default: false
           packages:
             - Music Player (Offline Music Library): org.gnome.Music
-            - VLC Media Player: org.videolan.VLC
+            - VLC (Media Player): org.videolan.VLC
             - Spotify: com.spotify.Client
         Office:
           description: "Office and productivity apps"

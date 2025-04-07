@@ -60,25 +60,6 @@ modules:
 
   - type: yafti
 
-  - type: default-flatpaks
-    notify: true
-    system:
-      install:
-        - org.mozilla.firefox
-        - org.gnome.Loupe
-        - org.gnome.Evince
-        - org.gnome.clocks
-        - com.mattjakeman.ExtensionManager
-        - org.gnome.TextEditor
-        - net.nokyan.Resources
-        - org.gnome.Calculator
-        - it.mijorus.smile
-        - org.gnome.Snapshot
-        - de.haeckerfelix.Fragments
-        - org.gnome.Decibels
-        - org.gnome.Totem
-    user: {}
-
   - type: gnome-extensions
     install:
       # Status Icons - https://extensions.gnome.org/extension/7332/status-icons/
