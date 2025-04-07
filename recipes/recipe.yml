@@ -110,4 +110,6 @@ modules:
         - Roboto
         - Noto Sans
 
+  - type: initramfs
+
   - type: signing
