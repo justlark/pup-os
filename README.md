@@ -15,6 +15,8 @@ Here are the changes this distro makes from the base Fedora Silverblue image:
 
 - Make the OS name appear as "PupOS" everywhere.
 - Include several default flatpak apps.
+- Prompt the user on first login with a list of recommended software to install,
+  via [Yafti](https://github.com/ublue-os/yafti/).
 - Replace the Firefox RPM package with the flatpak.
 - Replace [Gnome System Monitor](https://apps.gnome.org/SystemMonitor/) with
   [Resources](https://flathub.org/apps/net.nokyan.Resources).
