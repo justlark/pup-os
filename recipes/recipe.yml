@@ -58,6 +58,8 @@ modules:
       - htop
       - nvtop
 
+  - type: yafti
+
   - type: default-flatpaks
     notify: true
     system:
@@ -71,15 +73,10 @@ modules:
         - net.nokyan.Resources
         - org.gnome.Calculator
         - it.mijorus.smile
-        - org.libreoffice.LibreOffice
         - org.gnome.Snapshot
-        - org.gnome.Weather
-        - org.gnome.DejaDup
         - de.haeckerfelix.Fragments
         - org.gnome.Decibels
         - org.gnome.Totem
-        - org.gnome.Boxes
-        - com.usebottles.bottles
     user: {}
 
   - type: gnome-extensions

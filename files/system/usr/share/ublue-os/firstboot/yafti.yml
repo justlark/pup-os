@@ -1,0 +1,79 @@
+title: PupOS First Boot
+properties:
+  mode: "run-on-change"
+  path: "~/.config/yafti/last-run"
+screens:
+  first-screen:
+    source: yafti.screen.title
+    values:
+      title: "Welcome to PupOS!"
+      icon: "/usr/share/backgrounds/pup-os/logo.svg"
+  applications:
+    source: yafti.screen.package
+    values:
+      title: Install Apps
+      show_terminal: false
+      package_manager: yafti.plugin.flatpak
+      package_manager_defaults:
+        user: false
+        system: true
+      groups:
+        Web Browsers:
+          description: "Additional web browsers beyond Firefox"
+          default: false
+          packages:
+            - Google Chrome: com.google.Chrome
+            - Microsoft Edge: com.microsoft.Edge
+            - Brave: com.brave.Browser
+            - Opera: com.opera.Opera
+        Chat:
+          description: "Chat and messaging apps"
+          default: false
+          packages:
+            - Signal: org.signal.Signal
+            - Discord: com.discordapp.Discord
+            - Telegram: org.telegram.desktop
+            - Slack: com.slack.Slack
+            - Cinny (Matrix Client): in.cinny.Cinny
+        Media:
+          description: "Music and video players"
+          default: false
+          packages:
+            - Music Player (Offline Music Library): org.gnome.Music
+            - VLC Media Player: org.videolan.VLC
+            - Spotify: com.spotify.Client
+        Office:
+          description: "Office and productivity apps"
+          default: false
+          packages:
+            - LibreOffice (Microsoft Office Alternative): org.libreoffice.LibreOffice
+            - Standard Notes (Encrypted Notes App): org.standardnotes.standardnotes
+            - Obsidian Notes: md.obsidian.Obsidian
+            - Calendar: org.gnome.Calendar
+            - Contacts: org.gnome.Contacts
+        Gaming:
+          description: "Apps for gaming"
+          default: false
+          packages:
+            - Steam: com.valvesoftware.Steam
+            - Itch: io.itch.itch
+            - OBS Studio: com.obsproject.Studio
+        Utilities:
+          description: "System utilities"
+          default: false
+          packages:
+            - Déjà Dup (File Backups): org.gnome.DejaDup
+            - Bottles (Install Windows Apps): com.usebottles.bottles
+            - Flatseal (Manage App Permissions): com.github.tchx84.Flatseal
+            - Boxes (Create Virtual Machines): org.gnome.Boxes
+            - Impression (Create Boot Disks): io.gitlab.adhami3310.Impression
+  final-screen:
+    source: yafti.screen.title
+    values:
+      title: "All done!"
+      icon: "/usr/share/backgrounds/pup-os/logo.svg"
+      links:
+        - "Install more apps"
+          run: /usr/bin/gnome-software
+      description: |
+        Awooooooo!
