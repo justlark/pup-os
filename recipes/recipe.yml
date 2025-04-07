@@ -96,4 +96,13 @@ modules:
     include:
       - zz1-pup-os.gschema.override
 
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - FiraCode
+        - JetBrainsMono
+      google-fonts:
+        - Roboto
+        - Noto Sans
+
   - type: signing

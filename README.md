@@ -22,6 +22,8 @@ Here are the changes this distro makes from the base Fedora Silverblue image:
 - Swap out the default icon theme for
   [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme).
 - Include several default floofy desktop backgrounds.
+- Includue several default fonts, including some [Nerd
+  Fonts](https://www.nerdfonts.com/).
 - Use the PupOS logo on the login page.
 - Use the PupOS logo on the boot splash screen.
 - Use the PupOS logo on the watermark that appears over the desktop background
