@@ -1,12 +1,13 @@
 # PupOS 🐶
 
-🚧 This repo is under construction 🚧
-
 PupOS is a furry Linux distro built on [Fedora
 Atomic](https://fedoraproject.org/atomic-desktops/).
 
-This repo is currently mostly a playground for exploring distro customization. I
-anticipate most changes from the base image will be fairly superficial/cosmetic.
+## Why PupOS?
+
+This distro mostly exists as a playground for exploring distro customization and
+a tool for luring my friends into trying Linux by making it vaguely furry. Don't
+take it too seriously.
 
 ## Changes
 
@@ -21,6 +22,9 @@ Here are the changes this distro makes from the base Fedora Silverblue image:
   Ice](https://github.com/ful1e5/Bibata_Cursor).
 - Swap out the default icon theme for
   [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme).
+- Include the official [Status
+  Icons](https://extensions.gnome.org/extension/7332/status-icons/) Gnome
+  extension.
 - Include several default floofy desktop backgrounds.
 - Include several default fonts, including some [Nerd
   Fonts](https://www.nerdfonts.com/).
