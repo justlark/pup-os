@@ -16,3 +16,6 @@ icon-theme='Papirus'
 
 [org.gnome.login-screen]
 logo='/usr/share/pixmaps/pup-os-gdm-logo.png'
+
+[org.gnome.desktop.wm.preferences]
+button-layout='appmenu:minimize,maximize,close'
