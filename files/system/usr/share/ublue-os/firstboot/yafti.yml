@@ -7,7 +7,9 @@ screens:
     source: yafti.screen.title
     values:
       title: "Welcome to PupOS!"
-      icon: "/usr/share/backgrounds/pup-os/logo.svg"
+      icon: "/usr/share/pixmaps/pup-os-yafti-logo.png"
+      description: |
+        Let's get started UwU
   applications:
     source: yafti.screen.package
     values:
@@ -88,7 +90,7 @@ screens:
     source: yafti.screen.title
     values:
       title: "All done!"
-      icon: "/usr/share/backgrounds/pup-os/logo.svg"
+      icon: "/usr/share/pixmaps/pup-os-yafti-logo.png"
       links:
         - "Install more apps":
             run: /usr/bin/gnome-software
