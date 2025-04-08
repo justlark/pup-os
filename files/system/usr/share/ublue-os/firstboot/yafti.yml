@@ -90,7 +90,7 @@ screens:
       title: "All done!"
       icon: "/usr/share/backgrounds/pup-os/logo.svg"
       links:
-        - "Install more apps"
-          run: /usr/bin/gnome-software
+        - "Install more apps":
+            run: /usr/bin/gnome-software
       description: |
         Awooooooo!
