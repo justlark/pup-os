@@ -3,17 +3,10 @@ properties:
   mode: "run-on-change"
   path: "~/.config/yafti/last-run"
 screens:
-  first-screen:
-    source: yafti.screen.title
-    values:
-      title: "Welcome to PupOS!"
-      icon: "/usr/share/backgrounds/pup-os/logo.svg"
-      description: |
-        Let's get started UwU
   applications:
     source: yafti.screen.package
     values:
-      title: Install Apps
+      title: Install Recommended Apps
       show_terminal: false
       package_manager: yafti.plugin.flatpak
       package_manager_defaults:
@@ -86,13 +79,3 @@ screens:
             - Flatseal (Manage App Permissions): com.github.tchx84.Flatseal
             - Boxes (Create Virtual Machines): org.gnome.Boxes
             - Impression (Create Boot Disks): io.gitlab.adhami3310.Impression
-  final-screen:
-    source: yafti.screen.title
-    values:
-      title: "All done!"
-      icon: "/usr/share/backgrounds/pup-os/logo.svg"
-      links:
-        - "Install more apps":
-            run: /usr/bin/gnome-software
-      description: |
-        Awooooooo!
