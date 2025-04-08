@@ -14,9 +14,9 @@ take it too seriously.
 Here are the changes this distro makes from the base Fedora Silverblue image:
 
 - Make the OS name appear as "PupOS" everywhere.
-- Include several default flatpak apps.
 - Prompt the user on first login with a list of recommended software to install,
-  via [Yafti](https://github.com/ublue-os/yafti/).
+  via [Yafti](https://github.com/ublue-os/yafti/). They can revisit this menu at
+  any time.
 - Replace the Firefox RPM package with the flatpak.
 - Replace [Gnome System Monitor](https://apps.gnome.org/SystemMonitor/) with
   [Resources](https://flathub.org/apps/net.nokyan.Resources).
@@ -35,6 +35,7 @@ Here are the changes this distro makes from the base Fedora Silverblue image:
 - Use the PupOS logo on the watermark that appears over the desktop background
   (this can be disabled).
 - Set the default Gnome accent color to purple.
+- Show the minimize and maximize buttons in the window titlebar by default.
 - Include [distrobox](https://distrobox.it/).
 - Include [udev rules for
   Steam](https://github.com/ValveSoftware/steam-devices).
