@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=PupOS First Boot Setup
+Comment=Sets up the PupOS desktop on first boot.
+GenericName=Launcher
+Categories=Utility;System;
+Exec=/usr/share/ublue-os/firstboot/launcher/autostart.sh
+Icon=launch
+Terminal=false
+Type=Application
