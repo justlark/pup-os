@@ -58,7 +58,27 @@ modules:
       - htop
       - nvtop
 
-  - type: yafti
+  # TODO: This isn't working. The app seems to be crashing before installing
+  # anything.
+  # - type: yafti
+
+  - type: default-flatpaks
+    notify: true
+    user:
+      install:
+        - org.mozilla.firefox
+        - org.gnome.Loupe
+        - org.gnome.Evince
+        - org.gnome.Decibels
+        - org.gnome.Totem
+        - org.gnome.clocks
+        - org.gnome.TextEditor
+        - net.nokyan.Resources
+        - org.gnome.Calculator
+        - it.mijorus.smile
+        - org.gnome.Snapshot
+        - de.haeckerfelix.Fragments
+        - com.mattjakeman.ExtensionManager
 
   - type: gnome-extensions
     install:
