@@ -2,6 +2,12 @@ title: Welcome to PupOS
 properties:
   mode: "run-on-change"
 screens:
+  first-screen:
+    source: yafti.screen.title
+    values:
+      title: "Welcome to PupOS"
+      description: |
+        This installer recommends some basic apps to get you started.
   applications:
     source: yafti.screen.package
     values:
@@ -65,7 +71,7 @@ screens:
   final-screen:
     source: yafti.screen.title
     values:
-      title: "All done!"
+      title: "All done"
       links:
         - "Install More Applications":
             run: /usr/bin/gnome-software
