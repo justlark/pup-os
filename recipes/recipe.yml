@@ -65,10 +65,6 @@ modules:
       - gnome-backgrounds
       - fedora-workstation-backgrounds
 
-  # TODO: This isn't working. The app seems to be crashing before installing
-  # anything.
-  # - type: yafti
-
   - type: default-flatpaks
     notify: true
     system:
@@ -86,6 +82,8 @@ modules:
         - org.gnome.Snapshot
         - de.haeckerfelix.Fragments
         - com.mattjakeman.ExtensionManager
+
+  - type: yafti
 
   - type: gnome-extensions
     install:

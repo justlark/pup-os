@@ -1,35 +1,17 @@
-title: PupOS First Boot
+title: Welcome to PupOS
 properties:
   mode: "run-on-change"
-  path: "~/.config/yafti/last-run"
 screens:
   applications:
     source: yafti.screen.package
     values:
       title: Install Recommended Apps
-      show_terminal: false
+      show_terminal: true
       package_manager: yafti.plugin.flatpak
       package_manager_defaults:
         user: false
         system: true
       groups:
-        Core:
-          description: "Core apps"
-          default: true
-          packages:
-            - Firefox: org.mozilla.firefox
-            - Image Viewer: org.gnome.Loupe
-            - Document Viewer: org.gnome.Evince
-            - Audio Player: org.gnome.Decibels
-            - Videos (Video Player): org.gnome.Totem
-            - Clocks: org.gnome.clocks
-            - Text Editor: org.gnome.TextEditor
-            - Resources (Task Manager): net.nokyan.Resources
-            - Calculator: org.gnome.Calculator
-            - Smile (Emoji Picker): it.mijorus.smile
-            - Camera: org.gnome.Snapshot
-            - Fragments (BitTorrent Client): de.haeckerfelix.Fragments
-            - Extension Manager: com.mattjakeman.ExtensionManager
         Web Browsers:
           description: "Additional web browsers"
           default: false
@@ -79,3 +61,15 @@ screens:
             - Flatseal (Manage App Permissions): com.github.tchx84.Flatseal
             - Boxes (Create Virtual Machines): org.gnome.Boxes
             - Impression (Create Boot Disks): io.gitlab.adhami3310.Impression
+
+  final-screen:
+    source: yafti.screen.title
+    values:
+      title: "All done!"
+      links:
+        - "Install More Applications":
+            run: /usr/bin/gnome-software
+        - "GitHub":
+            run: /usr/bin/xdg-open https://github.com/justlark/pup-os
+      description: |
+        Awoooooo!
