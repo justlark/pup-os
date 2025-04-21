@@ -105,6 +105,10 @@ modules:
         path: "/usr/share/backgrounds/pup-os/sleeping-kitten.jpg"
       - name: "Paws Out"
         path: "/usr/share/backgrounds/pup-os/paws-out.jpg"
+      - name: "Howling Wolf"
+        path: "/usr/share/backgrounds/pup-os/howling-wolf.jpg"
+      - name: "Forest Wolf"
+        path: "/usr/share/backgrounds/pup-os/forest-wolf.jpg"
 
   - type: gschema-overrides
     include:
