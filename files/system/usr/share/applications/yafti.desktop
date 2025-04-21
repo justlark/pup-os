@@ -7,6 +7,3 @@ Exec=/usr/share/ublue-os/firstboot/launcher/manual-start.sh
 Icon=launch
 Terminal=false
 Type=Application
-
-# TODO: Disabled until we figure out why Yafti isn't working with our config.
-Hidden=true
