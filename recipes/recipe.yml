@@ -94,6 +94,10 @@ modules:
         path: "/usr/share/backgrounds/pup-os/ocean-husky.jpg"
       - name: "Smiling Husky"
         path: "/usr/share/backgrounds/pup-os/smiling-husky.jpg"
+      - name: "Sleeping Kitten"
+        path: "/usr/share/backgrounds/pup-os/sleeping-kitten.jpg"
+      - name: "Paws Out"
+        path: "/usr/share/backgrounds/pup-os/paws-out.jpg"
 
   - type: gschema-overrides
     include:
