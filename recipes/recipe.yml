@@ -42,7 +42,11 @@ modules:
 
   - type: rpm-ostree
     install:
+      # Superior alternative to toolbx.
       - distrobox
+      # There's not a good way around installing icon themes as a system
+      # package. We want this installed as a package because we want it to be
+      # auto-updated when more icons are added upstream.
       - papirus-icon-theme
       # We include this in case the user wants to install Steam, even though we
       # don't bundle it by default.
@@ -57,6 +61,9 @@ modules:
       # apps. Users can install these in a distrobox if they need them.
       - htop
       - nvtop
+      # We only permit floofy desktop backgrounds.
+      - gnome-backgrounds
+      - fedora-workstation-backgrounds
 
   # TODO: This isn't working. The app seems to be crashing before installing
   # anything.
