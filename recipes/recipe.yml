@@ -66,22 +66,23 @@ modules:
       - fedora-workstation-backgrounds
 
   - type: default-flatpaks
-    notify: true
-    system:
-      install:
-        - org.mozilla.firefox
-        - org.gnome.Loupe
-        - org.gnome.Evince
-        - org.gnome.Decibels
-        - org.gnome.Totem
-        - org.gnome.clocks
-        - org.gnome.TextEditor
-        - net.nokyan.Resources
-        - org.gnome.Calculator
-        - it.mijorus.smile
-        - org.gnome.Snapshot
-        - de.haeckerfelix.Fragments
-        - com.mattjakeman.ExtensionManager
+    configurations:
+      - notify: true
+        scope: system
+        install:
+          - org.mozilla.firefox
+          - org.gnome.Loupe
+          - org.gnome.Evince
+          - org.gnome.Decibels
+          - org.gnome.Totem
+          - org.gnome.clocks
+          - org.gnome.TextEditor
+          - net.nokyan.Resources
+          - org.gnome.Calculator
+          - it.mijorus.smile
+          - org.gnome.Snapshot
+          - de.haeckerfelix.Fragments
+          - com.mattjakeman.ExtensionManager
 
   - type: yafti
 
