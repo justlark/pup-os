@@ -72,9 +72,9 @@ modules:
         install:
           - org.mozilla.firefox
           - org.gnome.Loupe
-          - org.gnome.Evince
+          - org.gnome.Papers
           - org.gnome.Decibels
-          - org.gnome.Totem
+          - org.gnome.Showtime
           - org.gnome.clocks
           - org.gnome.TextEditor
           - net.nokyan.Resources
