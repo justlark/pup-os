@@ -84,7 +84,9 @@ modules:
           - de.haeckerfelix.Fragments
           - com.mattjakeman.ExtensionManager
 
-  - type: yafti
+  # Since Fedora 43, builds with Yafti seem to be failing. Maybe we don't need
+  # it anyways.
+  # - type: yafti
 
   - type: gnome-extensions
     install:
