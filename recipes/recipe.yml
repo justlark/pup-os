@@ -84,10 +84,6 @@ modules:
           - de.haeckerfelix.Fragments
           - com.mattjakeman.ExtensionManager
 
-  # Since Fedora 43, builds with Yafti seem to be failing. Maybe we don't need
-  # it anyways.
-  # - type: yafti
-
   - type: gnome-extensions
     install:
       # Status Icons - https://extensions.gnome.org/extension/7332/status-icons/
