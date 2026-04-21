@@ -33,12 +33,12 @@ jobs:
 
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           lfs: true
 
       - name: Build Custom Image
-        uses: blue-build/github-action@v1.8
+        uses: blue-build/github-action@24d146df25adc2cf579e918efe2d9bff6adea408
         with:
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
