@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Recommended Apps
-Comment=Install recommended apps for your system.
-GenericName=Launcher
-Categories=Utility;System;
-Exec=/usr/share/ublue-os/firstboot/launcher/manual-start.sh
-Icon=launch
-Terminal=false
-Type=Application
